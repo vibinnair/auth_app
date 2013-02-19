@@ -6,6 +6,7 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'bcrypt-ruby', '3.0.1'
 
 
 # Gems used only for assets and not required
@@ -29,6 +30,8 @@ group :development do
 end
 
 group :test do
+	gem 'cucumber-rails', '1.2.1', :require => false
+	gem 'database_cleaner', '0.7.0'
 	gem 'capybara', '1.1.2'
 end
 
